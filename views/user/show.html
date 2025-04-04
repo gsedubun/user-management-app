@@ -1,0 +1,12 @@
+{{define "content"}}
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">{{.User.FirstName}} {{.User.LastName}}</h5>
+        <p class="card-text"><strong>Email:</strong> {{.User.Email}}</p>
+        <p class="card-text"><strong>Address:</strong> {{.User.Address}}</p>
+        
+        <a href="/users/edit?id={{.User.ID}}" class="btn btn-warning">Edit</a>
+        <a href="/users" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>
+{{end}}
